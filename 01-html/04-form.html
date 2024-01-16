@@ -10,6 +10,80 @@
     <main>
       <form action="/submit">
         <!-- Add your code here -->
+        <h1>Form</h1>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Full Name" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@pdx.edu"
+          />
+        </div>
+        <br />
+        <div>
+          <fieldset>
+            <legend>Favorite Character:</legend>
+            <div>
+              <input
+                type="radio"
+                id="spongebob"
+                name="character"
+                value="spongebob"
+              />
+              <label for="spongebob">Spongebob</label>
+            </div>
+            <div>
+              <input type="radio" id="sandy" name="character" value="sandy" />
+              <label for="sandy">Sandy</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="patrick"
+                name="character"
+                value="patrick"
+              />
+              <label for="patrick">Patrick</label>
+            </div>
+          </fieldset>
+        </div>
+        <br />
+        <div>
+          <fieldset>
+            <legend>Are you a fan of the show?</legend>
+            <div>
+              <input
+                type="checkbox"
+                id="yes_episodes"
+                name="fan_status"
+                value="yes_episodes"
+              />
+              <label for="yes_episodes"
+                >Yes, I have watched all episodes!</label
+              >
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="yes_memes"
+                name="fan_status"
+                value="yes_memes"
+              />
+              <label for="yes_memes">Yes, it's got the best memes.</label>
+            </div>
+          </fieldset>
+          <br />
+          <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" name="Reset" />
+          </div>
+        </div>
       </form>
     </main>
   </body>

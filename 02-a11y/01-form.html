@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="../_styles/styles.css" />
   </head>
   <body>
-    <h1>01 - Form</h1>
-    <form action="/submit">
-      <span>Name</span>
-      <input type="text" />
-      <br /><br />
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
-      <br />
-      <button>Submit</button>
-    </form>
+    <main>
+      <h1>01 - Form</h1>
+      <form action="/submit">
+        <!-- explicit labeling for name and email -->
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" />
+        <br /><br />
+        <label for="email">Email</label>
+        <input id="email" type="text" name="email" />
+        <br /><br />
+        <!-- explicit labeling radio input, 
+      name allows for only 1 radio selection,
+      created a fieldset to associate options,
+      changed span title to a legend for the fieldset -->
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <label for="spongebob">Spongebob</label>
+          <input id="spongebob" type="radio" name="character" />
+          <br />
+          <label for="patrick">Patrick</label>
+          <input id="patrick" type="radio" name="character" />
+          <br />
+          <label for="sandy">Sandy</label>
+          <input id="sandy" type="radio" name="character" />
+          <br />
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
   </body>
 </html>

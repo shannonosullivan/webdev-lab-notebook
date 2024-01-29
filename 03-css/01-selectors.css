@@ -1,4 +1,5 @@
 /* CSS custom properties / CSS variables */
+/*so 1/29/24: need to finish lectures and double check this work*/
 
 :root {
   --darkmagenta: #8b008b;
@@ -10,12 +11,47 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
-  color: var(--red);
+li[class='dog']{
+  color: var(--magenta)
+}
+/*cat is not changing colors */
+li[class='cat']{
+  color: var(--teal)
+}
+li[class='parrot']{
+  color: var(--green)
+}
+li[class='donkey']{
+  color: var(--royalblue)
+}
+li[class='hedgehog']{
+  color: var(--magenta)
+}
+li[class='cat dog parrot']{
+  color: var(--royalblue)
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
 
-section li {
-  color: var(--green);
+div > ol > li{
+  color: var(--green)
+}
+div > ol > li + li{
+  color: var(--magenta)
+}
+div > ol > li + li + li{
+  color: var(--royalblue)
+}
+div > ol > li + li + li + li{
+  color: var(--magenta)
+}
+
+div > p + ol > li{
+  color:var(--green)
+}
+div > p + ol > li + li{
+  color: var(--green)
+}
+div > p + ol > li + li + li{
+  color: var(--green)
 }

@@ -14,8 +14,7 @@
 li[class='dog']{
   color: var(--magenta)
 }
-/*cat is not changing colors */
-li[class='cat']{
+li[id='cat']{
   color: var(--teal)
 }
 li[class='parrot']{

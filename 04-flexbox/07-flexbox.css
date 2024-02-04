@@ -1,23 +1,108 @@
 .flex-container {
   background-color: rgb(190, 190, 231);
+  display: flex;
 }
 
 /* Flex Container 1 */
-
-/* Flex Container 2 */
-
-/* Flex Container 3 */
-
-/* use height: 400px; on the container */
-
-/* Flex Container 4 */
-
-/* Flex Container 5 */
-
-/* Flex Container 6 */
-
-.flex-container-6 .flex-item {
-  width: 400px;
+.flex-container-1{
+  justify-content: center;
+  align-content: flex-start;
+  flex-flow: row wrap;
 }
 
+/*TODO: aligned properly but size of flex items is off and text is too large for box*/
+.flex-container-1 .flex-item{
+  width: 15%;
+  height: 15%;
+}
+
+/* Flex Container 2 */
+.flex-container-2{
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+/*TODO: aligned properly but size of flex items is off and text is too large for box*/
+.flex-container-2 .flex-item{
+  width: 15%;
+  height: 15%;
+}
+
+/* Flex Container 3 */
+/* use height: 400px; on the container */
+/*TODO: needs to be more space at the top of the box, with the same number alignment*/
+.flex-container-3{
+  height: 400px;
+  flex-flow: column-reverse wrap;
+  align-items: flex-end;
+  /*justify-content: flex-end;*/
+  /*align-content: flex-end;*/
+}
+
+/*TODO: size of flex items is off and text is too large and not at top of box*/
+.flex-container-3 .flex-item{
+  width: 20%;
+  height: 20%;
+}
+
+/* Flex Container 4 */
+/*TODO: formatted correcly but sometimes 6 goes to the second line*/
+.flex-container-4{
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  align-content: flex-end;
+  height: 400px;
+}
+
+/*TODO: item boxes are weird looking, like every other item box*/
+.flex-container-4 .flex-item{
+  width: 15%;
+  height: 15%;
+}
+
+/* Flex Container 5 */
+/*TODO: can't get flex items to align on baseline AND to be at top of container*/
+/*TODO: item font and sizes weird*/
+.flex-container-5{
+  flex-wrap: row nowrap;
+  align-items: center;
+  align-content: baseline;
+  height: 400px;
+}
+
+/*large items*/
+.flex-container-5 .item2,
+.flex-container-5 .item8{
+  height: 150px;
+}
+
+/*medium items*/
+.flex-container-5 .item1,
+.flex-container-5 .item3,
+.flex-container-5 .item6{
+  height: 100px;
+}
+
+/*small items*/
+.flex-container-5 .item4,
+.flex-container-5 .item5,
+.flex-container-5 .item7{
+  height: 50px;
+}
+
+/* Flex Container 6 */
 /* use height: 300px; on the container */
+/*TODO: figure out if theres formatting specifications for entire doc*/
+/*item and font formatting are weird here too*/
+.flex-container-6{
+  height: 300px;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.flex-container-6 .flex-item {
+  width: 30%;
+  height: 20%;
+}

@@ -1,3 +1,4 @@
+//https://askjavascript.com/javascript-add-to-object/
 let result = {};
 
 const insertItem = (key, value) => {

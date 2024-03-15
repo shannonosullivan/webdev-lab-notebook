@@ -15,7 +15,7 @@ const deleteItem = (key) => {
 
 const lookupItem = (key) => {
   // return the value from result that is associated with key
-  if (result[key] !== undefined){
+  if (result[key] !== undefined) {
     return result[key];
   }
 
@@ -28,11 +28,10 @@ const printItems = () => {
   const keys = Object.keys(result);
   let numKeys = keys.length;
 
-  for (i = 0; i < numKeys; i++){
-    if (i === 0){
+  for (i = 0; i < numKeys; i++) {
+    if (i === 0) {
       itemsString += keys[i];
-    }
-    else{
+    } else {
       itemsString += ", " + keys[i];
     }
   }
@@ -40,16 +39,16 @@ const printItems = () => {
   return itemsString;
 };
 
-insertItem('hello', 'world');
-insertItem('lorem', 'ipsum');
-insertItem('sit', 'amet');
+insertItem("hello", "world");
+insertItem("lorem", "ipsum");
+insertItem("sit", "amet");
 console.log(printItems());
 // expected: 'hello, lorem, sit' (order may be different)
-console.log(lookupItem('lorem'));
+console.log(lookupItem("lorem"));
 // expected: 'ipsum'
 
-deleteItem('lorem');
+deleteItem("lorem");
 console.log(printItems());
 // expected: 'hello, sit' (order may be different)
-console.log(lookupItem('lorem'));
+console.log(lookupItem("lorem"));
 // expected: 'Item does not exist'

@@ -1,3 +1,4 @@
+// watched solution video for help
 const characters = [
   { id: 1, name: 'Arya', house: 'Stark' },
   { id: 4, name: 'Sansa', house: 'Stark' },
@@ -22,20 +23,37 @@ const characters = [
 const mapNameFamily = (characters) => {
   // Return an array with the name and house of each character
   // Format: "Arya, of House Stark"
+  const nameFamily = characters.map(item => `${item.name}, House of "${item.house}`);
 
-  return characters;
+  return nameFamily;
 };
 
 const filterFamily = (characters, house) => {
   // Return an array with only the characters from a given house
+  const nameHouse = characters.filter((item) => item.house === house);
 
-  return characters;
+  return nameHouse;
 };
 
 const reduceHouses = (characters) => {
   // Return an object with the number of characters from each house
+  const result = {
+    Stark: 0,
+    Lannister: 0,
+    Targaryen: 0,
+    Greyjoy: 0,
+    Seaworth: 0,
+    Tarth: 0.
+  };
 
-  return characters;
+  const houses = characters.reduce((acc,curr) =>{
+    if (acc.hasOwnProperty(curr.house)){
+      acc[curr.house]++;
+    }
+    return acc;
+  }, result);
+
+  return result;
 };
 
 console.log(mapNameFamily(characters));

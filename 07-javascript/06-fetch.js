@@ -12,8 +12,8 @@ const addBookToDOM = (book) => {
 
   title.textContent = book.name;
   author.textContent = book.authors[0];
-  // TODO format date so it's only the yera
   released.textContent = book.released;
+  released.textContent = released.textContent.substring(0,4);
   pages.textContent = book.numberOfPages;
 
   element.append(title);

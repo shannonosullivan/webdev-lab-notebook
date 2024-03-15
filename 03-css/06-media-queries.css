@@ -1,10 +1,10 @@
 /*computer screens*/
 @media only screen and (min-width: 1024px) {
   body {
-    background: #FFAA1D;
+    background: #ffaa1d;
     color: var(--black);
   }
-  header{
+  header {
     background: var(--black);
     color: var(--white);
     position: absolute;
@@ -12,21 +12,21 @@
     top: 0;
     left: 0;
   }
-  ul{
+  ul {
     list-style: none;
     gap: 30px;
     padding-left: 10px;
   }
-  li{
+  li {
     display: inline-block;
     text-align: left;
     padding-right: 20px;
   }
-  a{
+  a {
     color: var(--white);
     text-decoration: none;
   }
-  .main{
+  .main {
     position: absolute;
     top: 5%;
     padding-top: 10px;
@@ -34,12 +34,12 @@
 }
 
 /*phone screens*/
-@media only screen and (max-width: 1024px){
-  body{
+@media only screen and (max-width: 1024px) {
+  body {
     background: #9932cc;
     color: var(--white);
   }
-  header{
+  header {
     background: var(--black);
     color: var(--white);
     position: absolute;
@@ -47,24 +47,22 @@
     top: 0;
     left: 0;
   }
-  ul{
+  ul {
     list-style: none;
     padding-left: 10px;
     padding-bottom: 0;
   }
-  li{
+  li {
     text-align: left;
     margin: 10px;
   }
-  a{
+  a {
     color: var(--white);
     text-decoration: none;
   }
-  .main{
+  .main {
     position: absolute;
     top: 15%;
     padding-top: 10px;
   }
 }
-
-

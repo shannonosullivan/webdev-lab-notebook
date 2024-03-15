@@ -10,46 +10,46 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class='dog']{
-  color: var(--magenta)
+li[class="dog"] {
+  color: var(--magenta);
 }
-li[id='cat']{
-  color: var(--teal)
+li[id="cat"] {
+  color: var(--teal);
 }
-li[class='parrot']{
-  color: var(--green)
+li[class="parrot"] {
+  color: var(--green);
 }
-li[class='donkey']{
-  color: var(--royalblue)
+li[class="donkey"] {
+  color: var(--royalblue);
 }
-li[class='hedgehog']{
-  color: var(--magenta)
+li[class="hedgehog"] {
+  color: var(--magenta);
 }
-li[class='cat dog parrot']{
-  color: var(--royalblue)
+li[class="cat dog parrot"] {
+  color: var(--royalblue);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
 
-div > ol > li{
-  color: var(--green)
+div > ol > li {
+  color: var(--green);
 }
-div > ol > li + li{
-  color: var(--magenta)
+div > ol > li + li {
+  color: var(--magenta);
 }
-div > ol > li + li + li{
-  color: var(--royalblue)
+div > ol > li + li + li {
+  color: var(--royalblue);
 }
-div > ol > li + li + li + li{
-  color: var(--magenta)
+div > ol > li + li + li + li {
+  color: var(--magenta);
 }
 
-div > p + ol > li{
-  color:var(--green)
+div > p + ol > li {
+  color: var(--green);
 }
-div > p + ol > li + li{
-  color: var(--green)
+div > p + ol > li + li {
+  color: var(--green);
 }
-div > p + ol > li + li + li{
-  color: var(--green)
+div > p + ol > li + li + li {
+  color: var(--green);
 }

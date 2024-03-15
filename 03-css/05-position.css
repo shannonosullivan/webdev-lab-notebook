@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.main{
+.main {
   display: inline-flex;
   width: 100%;
   position: relative;
@@ -18,7 +18,7 @@
 }
 
 .static,
-.relative{
+.relative {
   width: 300px;
   height: 400px;
   flex-grow: 1;
@@ -28,7 +28,6 @@
 .static {
   background-color: var(--darkviolet);
   position: static;
-  
 }
 
 .relative {
